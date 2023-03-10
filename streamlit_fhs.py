@@ -2,10 +2,13 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import plotly.graph_objects as go
 from PIL import Image
 
-import streamlit as st
+import sys
+sys.path.insert(0, '/Users/laurasenecaille/opt/anaconda3/lib/python3.9/site-packages/plotly')
+import plotly.plotly as py
+from plotly import graph_objs as go
+
 
 im = Image.open("poke.ico")
 st.set_page_config(
