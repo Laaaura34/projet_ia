@@ -34,9 +34,9 @@ dict_ratio= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['ratio']))
 
 st.write("# PREDICTION COMBAT POKEMON")
 
-#image = Image.open('pokeball.png')
-
-#st.image(image, width=200)
+image = Image.open('pokeball.png')
+image1 = Image.open('pikachu.jpg')
+image2 = Image.open('dracau.jpg')
 
 col1, col2  = st.columns(2)
 
@@ -46,15 +46,25 @@ first_pokemon = col1.number_input("Entrer le premier pokémon", key = "First_pok
 second_pokemon = col2.number_input("Entrer le deuxième pokémon", key='Second_pokemon',  min_value = 1, max_value = 800, step = 1, value = 3)
 
 with col11:
-    pass
+    st.image(image1, width=250)
 with col22:
     pass
 with col44:
-    pass
+    st.image(image2, width=250)
 with col55:
     pass
 with col33 :
+    st.write(" ")
+    st.write(" ")
+
+    st.image(image, width=100)
+    st.write(" ")
+    st.write(" ")
+
     button1 = st.button('Fight')
+
+st.write('<hr>',unsafe_allow_html=True  )
+
 
 df_combat = pd.DataFrame([[first_pokemon,second_pokemon]],
 columns= ['First_pokemon','Second_pokemon'])
@@ -104,10 +114,20 @@ noms_pokemon = dict(zip(df_pokemon_1['ID'], df_pokemon_1['Name']))
 colonne = ['First_pokemon', 'Second_pokemon', 'Winner']
 df_combat_nom = df_test_new[colonne].replace(noms_pokemon)
 
-nom = df_combat_nom['Winner']
+col_pok1 = st.columns(2)
 
 if button1:
-        st.write('<center><p class="big-font">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
+    st.write('<hr>',unsafe_allow_html=True  )
+    with col_pok1[0]:
+      st.write('<center>',df_combat_nom.iloc[0]['First_pokemon'],'</center>', unsafe_allow_html=True )
+      st.write('<center><p>Score de victoire : <strong>',  str(round(df_test_copie.iloc[0]['First_pokemon_ratio'], 3)), '</strong></p></center>', unsafe_allow_html=True)
+    
+    with col_pok1[1]:
+      st.write('<center>', df_combat_nom.iloc[0]['Second_pokemon'], '</center>',unsafe_allow_html=True  )
+      st.write('<center><p>Score de victoire : <strong>', str(round(df_test_copie.iloc[0]['Second_pokemon_ratio'], 3)), '</strong></p></center>', unsafe_allow_html=True)
+
+    st.write('<center><p class="big-font">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
+    st.write('<hr>',unsafe_allow_html=True  )
 
 ##################### GRAPHIQUE
 ####PREMIER POKEMON
