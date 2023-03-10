@@ -2,7 +2,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import plotly.express as px
 import plotly.graph_objects as go
 from PIL import Image
 
