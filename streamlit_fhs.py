@@ -369,7 +369,7 @@ fig.update_layout(
   height=400
 )
 
-fig.update_coloraxes(colorbar_bordercolor="#FFFFF")
+fig.update_coloraxes(colorbar_bordercolor="black")
 
 with st.container():
   radar_chart = st.write(fig)
