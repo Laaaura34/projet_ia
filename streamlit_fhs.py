@@ -213,7 +213,6 @@ second_pokemon = col2.selectbox("Saisissez le second pokémon", key = "Second_po
 image = Image.open('photos/pokeball.png')
 image1 = Image.open("pokemon/"+first_pokemon+".png")
 image2 = Image.open("pokemon/"+second_pokemon+".png")
-badge = Image.open("photos/badge.png")
 
 #col11, col22, col33 , col44, col55 = st.columns([2, 4, 3.5, 1, 2.5])
 col11, col22 , col33, col44,col55= st.columns([1,5,1,5,1])
@@ -308,17 +307,8 @@ if button1:
           st.write(" ")
       else : 
           st.write("<center><p>Pokémon légendaire</p></center>", unsafe_allow_html=True)
-    
-    
-    st.write('<hr>',unsafe_allow_html=True  )
 
-    with col_pok2[0]:
-      st.write(":smile:",unsafe_allow_html=True )
-    with col_pok2[1]:
-      st.write('<center><p style="font-size:25px">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
-    with col_pok2[2]:
-      st.write(":smile:",unsafe_allow_html=True )
-   
+    st.write(':smile: <center><p style="font-size:30px">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
     st.write('<hr>',unsafe_allow_html=True  )
 
 
