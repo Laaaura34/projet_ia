@@ -354,14 +354,12 @@ fig.add_trace(go.Scatterpolar(
       theta=index_best_poke1,
       fill='toself',
       fillcolor = 'lightsteelblue',
-      line_close=True,
       name= df_combat_nom.iloc[0]['First_pokemon']
 ))
 fig.add_trace(go.Scatterpolar(
       r=df_poke_best_poke2.values[0],
       theta=index_best_poke2,
       fill='toself',
-      line_close=True,
       name=df_combat_nom.iloc[0]['Second_pokemon']
 ))
 
@@ -371,6 +369,8 @@ fig.update_layout(
   width=400,
   height=400
 )
+
+fig.update_coloraxes(colorbar_bordercolor="#FFFFF")
 
 with st.container():
   radar_chart = st.write(fig)
