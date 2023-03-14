@@ -37,7 +37,7 @@ dict_gen = dict(zip(df_pokemon_1['Name'], df_pokemon_copie_1['Generation']))
 dict_leg = dict(zip(df_pokemon_1['Name'], df_pokemon_copie_1['Legendary']))
 
 
-st.write("<h1>PREDICTION COMBAT POKEMON</h1>", unsafe_allow_html=True )
+st.write("<h1><center>PREDICTION COMBAT POKEMON</center></h1>", unsafe_allow_html=True )
 
 col1, col2  = st.columns(2)
 
@@ -381,3 +381,5 @@ left, middle, right = st.columns((2, 5, 2))
 with middle:
   radar_chart = st.write(fig)
 #####################
+
+st.write("<footer>Réalisé par Béteille Lisa et Sénécaille Laura</footer>",unsafe_allow_html=True  )
