@@ -215,9 +215,11 @@ image1 = Image.open("pokemon/"+first_pokemon+".png")
 image2 = Image.open("pokemon/"+second_pokemon+".png")
 
 #col11, col22, col33 , col44, col55 = st.columns([2, 4, 3.5, 1, 2.5])
-col22 , col44= st.columns([5,5])
+col11, col22 , col33, col44,col55= st.columns([1,5,1,5,1])
+oui, non, ouinon = st.columns([1,6,1])
 
 with col22:
+  with non : 
     st.image(image1, width=250)
 with col44:
     st.image(image2, width=250)
