@@ -368,7 +368,7 @@ fig.add_trace(go.Scatterpolar(
 fig.update_layout(
   showlegend=True,
   polar={'radialaxis': {'visible': True}},
-  width='100%',
+  width=400,
   height=400
 )
 
