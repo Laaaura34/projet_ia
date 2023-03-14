@@ -221,9 +221,9 @@ col111, col222 , col333, col444,col555= st.columns([1,4,3,4,1])
 
 with st.container():
   with col22:
-      st.image(image1, width=250)
+      st.image(image1, width=100)
   with col44:
-      st.image(image2, width=250)
+      st.image(image2, width=100)
   with col333 :
     st.image(image, width=100)
 
