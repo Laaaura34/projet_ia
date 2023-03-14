@@ -215,7 +215,7 @@ image1 = Image.open("pokemon/"+first_pokemon+".png")
 image2 = Image.open("pokemon/"+second_pokemon+".png")
 
 #col11, col22, col33 , col44, col55 = st.columns([2, 4, 3.5, 1, 2.5])
-col22 , col44= st.columns([2,1,2])
+col22 , col44= st.columns([5,5])
 
 with col22:
     st.image(image1, width=250)
