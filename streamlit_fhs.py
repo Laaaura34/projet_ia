@@ -354,18 +354,21 @@ fig.add_trace(go.Scatterpolar(
       theta=index_best_poke1,
       fill='toself',
       fillcolor = 'lightsteelblue',
+      line_close=True,
       name= df_combat_nom.iloc[0]['First_pokemon']
 ))
 fig.add_trace(go.Scatterpolar(
       r=df_poke_best_poke2.values[0],
       theta=index_best_poke2,
       fill='toself',
+      line_close=True,
       name=df_combat_nom.iloc[0]['Second_pokemon']
 ))
 
 fig.update_layout(
   showlegend=True,
-  width=400,
+  polar={'radialaxis': {'visible': True}},
+  width='100%',
   height=400
 )
 
