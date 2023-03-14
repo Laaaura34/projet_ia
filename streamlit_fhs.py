@@ -308,6 +308,9 @@ if button1:
           st.write(" ")
       else : 
           st.write("<center><p>Pokémon légendaire</p></center>", unsafe_allow_html=True)
+    
+    
+    st.write('<hr>',unsafe_allow_html=True  )
 
     with col_pok2[0]:
       st.image(badge, width=100)
