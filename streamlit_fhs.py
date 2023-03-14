@@ -364,14 +364,25 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 fig.update_layout(
-  title = ("Caractéristiques des pokémon"+df_combat_nom.iloc[0]['Second_pokemon']+"et"+df_combat_nom.iloc[0]['First_pokemon']),
+  title={
+        'text': ("Statistiques de "+df_combat_nom.iloc[0]['First_pokemon']+" et "+df_combat_nom.iloc[0]['Second_pokemon']),
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'},
+  
   showlegend=True,
   width=400,
   height=400,
   polar=dict(
     radialaxis=dict(
       color="black",
-      visible=True))
+      visible=True)),
+  font=dict(
+        family="Courier New, monospace",
+        size=11,
+        color="RebeccaPurple"
+    )
 )
 
 
