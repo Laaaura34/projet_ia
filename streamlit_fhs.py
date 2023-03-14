@@ -216,18 +216,18 @@ image2 = Image.open("pokemon/"+second_pokemon+".png")
 
 #col11, col22, col33 , col44, col55 = st.columns([2, 4, 3.5, 1, 2.5])
 col11, col22 , col33, col44,col55= st.columns([1,5,1,5,1])
+col111, col222 , col333, col444,col555= st.columns([1,4,3,4,1])
+
 
 with st.container():
   with col22:
       st.image(image1, width=250)
   with col44:
       st.image(image2, width=250)
+  with col333 :
+    st.image(image, width=100)
 
-
-
-st.image(image, width=100)
-
-button1 = st.button('Fight')
+    button1 = st.button('Fight')
 
 st.write('<hr>',unsafe_allow_html=True  )
 
