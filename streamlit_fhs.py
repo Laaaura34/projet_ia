@@ -373,10 +373,8 @@ fig.update_layout(
       visible=True))
 )
 
-with st.container():
-  radar_chart = st.write(fig,use_container_width = True)
-  
+
 left, middle, right = st.columns((2, 5, 2))
 with middle:
-  radar_chart = st.write(fig,use_container_width = True)
+  radar_chart = st.write(fig)
 #####################
