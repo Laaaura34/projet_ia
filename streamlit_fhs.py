@@ -366,7 +366,7 @@ fig.add_trace(go.Scatterpolar(
 fig.update_layout(
   showlegend=True,
   width=500,
-  height=500
+  height=450
 )
 
 with st.container():
