@@ -370,7 +370,6 @@ fig.update_layout(
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'},
-  
   showlegend=True,
   width=400,
   height=400,
@@ -379,9 +378,8 @@ fig.update_layout(
       color="black",
       visible=True)),
   font=dict(
-        family="Courier New, monospace",
         size=11,
-        color="RebeccaPurple"
+        color="white"
     )
 )
 
