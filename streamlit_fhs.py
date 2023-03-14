@@ -367,5 +367,6 @@ fig.update_layout(
   showlegend=True
 )
 
-radar_chart = st.write(fig)
+with st.container():
+  radar_chart = st.write(fig)
 #####################
