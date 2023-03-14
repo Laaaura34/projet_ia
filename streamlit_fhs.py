@@ -10,7 +10,7 @@ im = Image.open("photos/poke.ico")
 st.set_page_config(
    page_title="Pokemon Prediction App",
    page_icon=im,
-   layout="wide",
+   #layout="wide",
    #initial_sidebar_state="expanded",
    menu_items={
         'About': "Challenge pokémon - Béteille Lisa & Sénécaille Laura"
