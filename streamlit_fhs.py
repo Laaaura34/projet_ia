@@ -364,6 +364,7 @@ fig.add_trace(go.Scatterpolar(
 ))
 
 fig.update_layout(
+  title = ("Caractéristiques des pokémon"+df_combat_nom.iloc[0]['Second_pokemon']+"et"+df_combat_nom.iloc[0]['First_pokemon']),
   showlegend=True,
   width=400,
   height=400,
