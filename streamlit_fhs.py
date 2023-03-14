@@ -215,24 +215,18 @@ image1 = Image.open("pokemon/"+first_pokemon+".png")
 image2 = Image.open("pokemon/"+second_pokemon+".png")
 
 #col11, col22, col33 , col44, col55 = st.columns([2, 4, 3.5, 1, 2.5])
-col22, col33 , col44= st.columns([2,1,2])
+col22 , col44= st.columns([2,1,2])
 
 with col22:
     st.image(image1, width=250)
 with col44:
     st.image(image2, width=250)
-with col33 :
-    st.write(" ")
-    st.write(" ")
-    st.write(" ")
-    st.write(" ")
 
-    st.image(image, width=100)
-    st.write(" ")
-    st.write(" ")
-    st.write(" ")
 
-    button1 = st.button('Fight')
+
+st.image(image, width=100)
+
+button1 = st.button('Fight')
 
 st.write('<hr>',unsafe_allow_html=True  )
 
@@ -291,8 +285,6 @@ colonne = ['First_pokemon', 'Second_pokemon', 'Winner']
 df_combat_nom = df_test_new[colonne].replace(noms_pokemon)
 
 col_pok1 = st.columns(2)
-
-
 
 if button1:
     st.write('<hr>',unsafe_allow_html=True  )
