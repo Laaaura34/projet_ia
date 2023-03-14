@@ -307,7 +307,7 @@ if button1:
       else : 
           st.write("<center><p>Pokémon légendaire</p></center>", unsafe_allow_html=True)
 
-    st.write('<center><p style="font-size:10">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
+    st.write('<center><p style="font-size:14">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
     st.write('<hr>',unsafe_allow_html=True  )
 
 
