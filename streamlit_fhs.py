@@ -313,11 +313,11 @@ if button1:
     st.write('<hr>',unsafe_allow_html=True  )
 
     with col_pok2[0]:
-      st.image(badge, width=100)
+      st.write(":smile:",unsafe_allow_html=True )
     with col_pok2[1]:
       st.write('<center><p style="font-size:25px">Le vainqueur du combat est<b> ', df_combat_nom.iloc[0]['Winner'], '</b></p></center>',unsafe_allow_html=True)
     with col_pok2[2]:
-      st.image(badge, width=100)
+      st.write(":smile:",unsafe_allow_html=True )
    
     st.write('<hr>',unsafe_allow_html=True  )
 
