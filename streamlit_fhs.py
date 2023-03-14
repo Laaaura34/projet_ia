@@ -367,13 +367,10 @@ fig.update_layout(
   showlegend=True,
   width=400,
   height=400,
-  paper_bgcolor="red",
   polar=dict(
     radialaxis=dict(
-      color="red",
-      visible=True,
-      range=[0, 5]
-    ))
+      color="black",
+      visible=True))
 )
 
 
