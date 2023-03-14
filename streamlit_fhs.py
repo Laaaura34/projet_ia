@@ -366,11 +366,18 @@ fig.add_trace(go.Scatterpolar(
 fig.update_layout(
   showlegend=True,
   width=400,
-  height=400
+  height=400,
+  paper_bgcolor="red",
+  polar=dict(
+    radialaxis=dict(
+      color="red",
+      visible=True,
+      range=[0, 5]
+    ))
 )
 
-fig.update_coloraxes(colorbar_bordercolor="black")
-fig.update_coloraxes(autocolorscale=True)
+
+
 with st.container():
   radar_chart = st.write(fig)
 #####################
