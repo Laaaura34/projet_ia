@@ -1,0 +1,14 @@
+dict_type2 = dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Type_2']))
+dict_HP = dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['HP']))
+dict_Attack = dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Attack']))
+dict_Defense = dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Defense']))
+dict_Atq_speciale= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Atq_speciale']))
+dict_Def_speciale= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Def_speciale']))
+dict_vitesse= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['vitesse']))
+dict_victoire= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['victoire']))
+dict_ratio= dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['ratio']))
+dict_type1 = dict(zip(df_pokemon_copie_1.index, df_pokemon_copie_1['Type_1']))
+
+
+first_pokemon = col1.number_input("Entrer le premier pokémon", key = "First_pokemon", min_value = 1, max_value = 800, step = 1, value = 2)
+second_pokemon = col2.number_input("Entrer le deuxième pokémon", key='Second_pokemon',  min_value = 1, max_value = 800, step = 1, value = 3)
