@@ -372,7 +372,7 @@ fig.update_layout(
       color="black",
       visible=True)),
   font=dict(
-        size=11,
+        size=14,
         color="white"
     )
 )
