@@ -227,7 +227,7 @@ with st.container():
   with col333 :
     st.image(image, width=100)
 
-    button1 = st.button('Fight')
+    button1 = st.button('Fight ⚡')
 
 st.write('<hr>',unsafe_allow_html=True  )
 
@@ -300,7 +300,7 @@ if button1:
           st.write("<center><p>Pokémon légendaire</p></center>", unsafe_allow_html=True)
 
     with col_pok1[1]:
-      st.write('<center><h3>', df_combat_nom.iloc[0]['Second_pokemon'], '</h3></center>',unsafe_allow_html=True  )
+      st.write('<center><h3>', df_combat_nom.iloc[0]['Second_pokemon'], '</h3></center>',unsafe_allow_html=True)
       st.write('<center><p>Score de victoire : <strong>', str(round(df_test_copie.iloc[0]['Second_pokemon_ratio'], 3)), '</strong></p></center>', unsafe_allow_html=True)
       st.write('<center><p>Pokémon de la génération <strong>', str(df_combat_copie.iloc[0]['Second_pokemon_gen']), '</strong></p></center>', unsafe_allow_html=True)
       if(df_combat_copie.iloc[0]['Second_pokemon_leg']==False) :
